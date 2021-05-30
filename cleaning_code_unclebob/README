@@ -1,0 +1,68 @@
+Name: Prabha Pandey
+Roll Number: 2018201053
+
+
+(a) Explanation of implemented features:
+
+	1) maintaining the structure:
+		
+		Package statement
+		Import statements
+		    All static imports
+		    All non-static imports
+		Exactly one top-level class
+		    Class variables
+		    Instance variables
+		    Constructors
+		    Methods
+
+
+	2) Making the code more readable by proper usage of whitespaces:
+
+		Two blank lines before starting static blocks
+		One blank line after a method signature that is multiline
+		A single space separating reserved keywords like if, for, catch from an open parenthesis
+		A single space separating reserved keywords like else, catch from a closing parenthesis
+
+	3) Proper indentation and Indent wrapped lines for better readability.
+
+	4) Restricting the number of parameters a method accepts to two parameters.
+		Made ErrorCodeAndParameter class to deal with 3 arguments being passed in ArgsException constructor.
+
+	5) Put comment at starting of each file explaining the flow and purpose of the class. Big picture comment
+
+	6) Verticle formatting.
+
+	7) Length of function description is short(4-5 lines), if any function had more lines than that, a separate function is made.
+		Eg: identifyArgumentType(), checkIfArgumentMarshalerExists() and addArgsInListAndUpdateMarshaler() are added in Args.java
+
+	8) Made 2 new classes:
+		ParseSchema
+		ParseArgumentCharacters
+	   in separate files, based on the tasks they are performing.
+
+	
+	Unit tests:
+
+	1) added following unit tests in ArgsTest.java:
+			testMissingMapMessage
+			testMalformedMapMessage
+			testFourMapArgument
+			testManyMissingStringArrayElement
+	2) removed malFormedMapArgument from ArgsTest.java.
+
+
+(b) Instructions on execution and unit testing
+		For executing the code run:
+			'java -cp build/jar/args.jar com.cleancoder.args.ArgsMain'
+
+		For unit testing run:
+			'java -cp "lib/junit-4.13.jar:lib/hamcrest-core-1.3.jar:build/jar/args.jar" ./test/com/cleancoder/args/ArgsTest.java <Name_of_unit_test>'
+
+
+(c) Brief on how your code-base has characteristics of clean code:
+		
+		The code content is properly indented. No function has more than 2 arguments. The names given to function are self explanatory. 
+		The content of each function is short and precise. Proper usage of whitespaces and verticle formatting was taken in to consideration.
+		Made separate classes dedicated for particular functionalities. 
+
